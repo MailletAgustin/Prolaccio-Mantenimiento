@@ -8,8 +8,8 @@ let https = require('https');
 let http = require('http');
 
 // Config on conmmand line
-app.set('port', args.port || 8080);
-app.set('mode', args.mode || 'development');
+app.set('port', args.port || 443);
+app.set('mode', args.mode || 'production');
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, 'views'))

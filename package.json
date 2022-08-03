@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js --mode=production --port 443",
     "start-dev": "nodemon app.js --mode=development --port 80",
-    "start-prod": "pm2 start app.js --mode=production --port 443"
+    "start-prod": "pm2 app.js --mode=production --port 443"
   },
   "keywords": [],
   "author": "",
