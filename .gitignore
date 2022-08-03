@@ -1,0 +1,3 @@
+#Ignore NODE MODULES y SENSIBLE DATA
+sensible.json
+node_modules

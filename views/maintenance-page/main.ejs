@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<%- include('main-header.ejs') %>
+
+    <body>
+
+        <!-- Main content -->
+        <div class="bgimg">
+            <div class="topleft">
+                <img src="\maintenance-page\src\logo-blanco-transparente.png">
+            </div>
+            <div class="middle">
+                <h1>ESTAMOS INNOVANDO</h1>
+                <hr>
+                <p>Vuelve pronto</p>
+            </div>
+            <div class="bottomleft">
+                <a href="https://www.facebook.com/PROLACCIOOFICIAL/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/prolacciocosmetics/?hl=es" class="fa fa-instagram"></a>
+                <a href="https://ar.linkedin.com/in/carolina-ferreyra-y-almada-92247b178" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+        <!-- Preloader -->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script>
+            $(window).on("load", function () {
+                setTimeout(function () {
+                    $(".loader-wrapper").fadeOut("slow");
+                }, 1200);
+            });
+        </script>
+
+    </body>
+
+    <%- include('main-style.ejs') %>
+
+</html>
